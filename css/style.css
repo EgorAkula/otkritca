@@ -1,0 +1,56 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/pricol.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: palevioletred;
+    color: lemonchiffon;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 100px 100px 100px 100px;
+    box-shadow: 0px 0px 10px 0px black;
+    animation: scale 0.5s;
+    opacity: 55%;
+}
+
+.title {
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+.poem {
+    font-size: 30px;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    100% {
+        transform: scale(1);
+        border-radius: 100px 100px 100px 100px;
+    }
+}
